@@ -2,7 +2,8 @@
   "name": "@financial-times/n-article-ribbon",
   "version": "0.0.0",
   "description": "n-article-ribbon creates a ribbon with articles",
-  "main": "index.js",
+  "main": "main.js",
+  "style": "main.scss",
   "scripts": {
     "precommit": "node_modules/.bin/secret-squirrel",
     "commitmsg": "node_modules/.bin/secret-squirrel-commitmsg",
