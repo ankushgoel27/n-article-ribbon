@@ -1,16 +1,18 @@
-<div class="o-grid-container" data-trackable="onward-journey | top-ribbon">
-	{{#if titleHref}}
-		<h2 class="onward-journey__title">
-			<a href="{{titleHref}}" data-trackable="ribbon-title">{{{title}}}</a>
-		</h2>
-	{{else}}
-		<h2 class="onward-journey__title">{{title}}</h2>
-	{{/if}}
-	<ul class="onward-journey__items o-teaser-collection o-grid-row o-expander__content">
-		{{#each items}}
-		<li class="o-teaser-collection__item onward-journey__item" data-o-grid-colspan="0 M4 L3">
-			{{>n-teaser/templates/heavy mods=(array 'small') colspan='{"default": 0, "XL": 3}' position='{"default": "left"}' widths="[500, 332]" noTag=true}}
-		</li>
-		{{/each}}
-	</ul>
+<div aria-hidden="true" class="o--if-js n-article-ribbon n-article-ribbon--full-width n-article-ribbon--ribbon js-n-article-ribbon-ribbon">
+	<div class="o-grid-container" data-trackable="n-article-ribbon">
+			{{#if titleHref}}
+				<h2 class="n-article-ribbon__title">
+					<a href="{{titleHref}}" data-trackable="ribbon-title">{{{title}}}</a>
+				</h2>
+			{{else}}
+				<h2 class="n-article-ribbon__title">{{title}}</h2>
+			{{/if}}
+			<ul class="n-article-ribbon__items o-teaser-collection o-grid-row o-expander__content">
+				{{#each items}}
+				<li class="o-teaser-collection__item n-article-ribbon__item" data-o-grid-colspan="0 M4 L3">
+					{{>n-teaser/templates/heavy mods=(array 'small') colspan='{"default": 0, "XL": 3}' position='{"default": "left"}' widths="[500, 332]" noTag=true lazyLoad=false}}
+				</li>
+				{{/each}}
+			</ul>
+		</div>
 </div>

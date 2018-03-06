@@ -1,4 +1,4 @@
-.onward-journey__items {
+.n-article-ribbon__items {
 	padding-left: 0;
 
 	@include oGridRespondTo($until: S) {
@@ -6,11 +6,11 @@
 	}
 }
 
-.onward-journey__item {
+.n-article-ribbon__item {
 	display: block;
 }
 
-.onward-journey--full-width {
+.n-article-ribbon--full-width {
 	position: relative;
 	&:before {
 		content: '';
@@ -25,7 +25,7 @@
 	}
 }
 
-.onward-journey--ribbon {
+.n-article-ribbon--ribbon {
 
 	@include oGridRespondTo($until: M) {
 		display: none;
@@ -34,16 +34,16 @@
 	min-height: 96px; //height it consumes with two lines
 	@include oTypographyPadding($top: 2);
 
-	&.onward-journey--opinion {
+	&.n-article-ribbon--opinion {
 		&:before {
 			background: oColorsMix(sky, oxford-100, 90);
 		}
-		.onward-journey__title {
+		.n-article-ribbon__title {
 			border-bottom: 1px solid oColorsMix(getColor('black'), getColor(sky), 20);
 		}
 	}
 
-	.onward-journey__title {
+	.n-article-ribbon__title {
 		@include oTypographySans(0);
 		@include oTypographyMargin($top: 0, $bottom: 2);
 		@include oTypographyPadding($bottom: 2);
@@ -56,11 +56,11 @@
 		}
 	}
 
-	.onward-journey__items {
+	.n-article-ribbon__items {
 		@include oTypographyMargin($top: 2, $bottom: 0);
 	}
 
-	.onward-journey__item {
+	.n-article-ribbon__item {
 		@include oGridRespondTo($until: L) {
 			&:last-child {
 				display: none;
@@ -92,7 +92,7 @@
 	}
 }
 
-.onward-journey--simple {
+.n-article-ribbon--simple {
 
 	@include oGridRespondTo(L) {
 		width: 90%;
@@ -108,7 +108,7 @@
 	}
 }
 
-.onward-journey {
+.n-article-ribbon {
 	.n-image-wrapper--placeholder.n-image-wrapper--lazy-loading:before {
 		animation: none;
 	}

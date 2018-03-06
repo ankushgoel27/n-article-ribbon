@@ -4,6 +4,21 @@ node_modules/@financial-times/n-gage/index.mk:
 
 -include node_modules/@financial-times/n-gage/index.mk
 
-IGNORE_A11Y = true
+demo-build:
+	@rm -rf bower_components/n-article-ribbon
+	@mkdir bower_components/n-article-ribbon
+	@cp -r templates/ bower_components/n-article-ribbon/templates/
+	@node-sass demos/src/main.scss public/main.css --include-path bower_components
+	@$(DONE)
 
-test: verify
+demo: demo-build
+	@node demos/app
+
+a11y: demo-build
+	@node .pa11yci.js
+	@PA11Y=true node demos/app
+	@$(DONE)
+
+unit-test:
+
+test: verify unit-test a11y

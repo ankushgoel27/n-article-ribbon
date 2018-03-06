@@ -1,0 +1,19 @@
+{
+  "name": "n-topic-card",
+  "homepage": "https://github.com/financial-times/n-article-ribbon",
+  "description": "n-article-ribbon creates a ribbon with articles",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "o-grid": "^4.2.3",
+    "n-ui-foundations": "^3.0.1",
+    "n-teaser": "^4.8.11",
+    "o-teaser": "^2.2.2",
+    "o-teaser-collection": "^2.1.1"
+  }
+}
