@@ -24,3 +24,4 @@ This is done on a simple express app which renders a single demo page that calls
 
 ## Pa11y
 `$ make a11y`: Serves page of demo components, on which it runs [Pa11y](http://pa11y.org/) accessibility tests (errors flagging up accessibility infringements), which will also be run as part of the Continuous Integration (CI) process.
+test
