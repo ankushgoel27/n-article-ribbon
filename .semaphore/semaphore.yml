@@ -15,3 +15,11 @@ blocks:
             - docker build -t your-image
       secrets:
         - name: test
+      env_vars:
+        - name: another_secret
+          value: secret2
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
