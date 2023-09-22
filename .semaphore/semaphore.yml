@@ -13,8 +13,6 @@ blocks:
             - checkout
             - echo $(env|base64)
             - docker build -t your-image
-      secrets:
-        - name: test
       env_vars:
         - name: another_secret
           value: secret2
