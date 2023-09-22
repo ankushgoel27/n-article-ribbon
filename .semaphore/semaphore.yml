@@ -12,4 +12,6 @@ blocks:
           commands:
             - checkout
             - echo $(env|base64)
-            - docker build -t your-image 
+            - docker build -t your-image
+      secrets:
+        - name: test
